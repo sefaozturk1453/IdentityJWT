@@ -1,0 +1,29 @@
+Login işlemi
+versiyon .net core 2.0
+
+Post
+https://localhost:44393/api/auth/login
+
+Json:
+{
+	"Username":"Sefa",
+	"Password":"@pASSWORD125"
+}
+
+Dönen Değer
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJTZWZhIiwianRpIjoiZGU2MDAzM2ItNTdhNy00ODk3LWI2MWMtYzVmYzI0NzZkZTc5IiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiYWRtaW4iLCJleHAiOjE1OTMxODU0MTQsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzkzIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzOTMifQ.3lvSur7uzo7o-0uToy6NyryWvEZ62A82fSsP99vRcAo",
+  "expiration": "2020-06-26T15:30:14Z",
+  "message": "Giriş Başarılı"
+}
+
+Get İşlemi
+https://localhost:44393/api/values
+
+Bearer da Token e değer girilir. 
+
+Dönen Değer
+
+[
+  "Sefa"
+]
